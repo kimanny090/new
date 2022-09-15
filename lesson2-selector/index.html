@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            background: red;
+        }
+        /* type selector */
+       div{
+        background: blue;
+       }
+       /* class selector */
+       .alert-text{
+        color: white;
+       }
+       #text{
+        background: green;
+       }
+       /* grouping selectors */
+       p,
+       span{
+        color: white;
+       }
+       /* chaining selector */
+       .subsection.header{
+        font-weight: 700;
+       }
+       /* descendant combinaaator */
+       .ancestor .content{
+        color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <div>hello world</div>
+    <div>Hello Again</div>
+    <p>paragraph</p>
+    <div class="alert-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptatibus saepe minima officiis facilis, nihil tempore hic nobis pariatur commodi laboriosam ab sed? Accusamus, minus ullam reprehenderit facere explicabo nobis!</div>
+    <span id="text">my text</span>
+    <div class="subsection header">Latest Post</div>
+    <p class="subsection-preveiw">this is where the preveiw of the post is</p>
+    <div class="ancestor">
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia error at incidunt id nostrum, facere vel ut unde quibusdam quasi accusamus sequi facilis obcaecati veritatis aperiam illo saepe possimus atque?</div>
+        <div class="content">where is the money at</div>
+    </div>
+</body>
+</html>
